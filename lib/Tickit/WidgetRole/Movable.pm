@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use parent qw(Tickit::WidgetRole);
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 =head1 NAME
 
@@ -12,7 +12,7 @@ Tickit::WidgetRole::Movable - support for resizable/movable "panels"
 
 =head1 VERSION
 
-Version 0.001
+Version 0.002
 
 =head1 SYNOPSIS
 
@@ -104,13 +104,12 @@ We delegate each of these to separate methods - see:
 =cut
 
 sub on_mouse {
-	my $self = shift;
-	my ($ev, $button, $line, $col) = @_;
-	return $self->mouse_release($line, $col) if $ev eq 'release';
-	return unless $button & 1;
+	my ($self, $ev) = @_;
+	return $self->mouse_release($ev->line, $ev->col) if $ev->type eq 'release';
+	return unless $ev->button & 1;
 
-	return $self->mouse_press($line, $col) if $ev eq 'press';
-	return $self->mouse_drag($line, $col) if $ev eq 'drag';
+	return $self->mouse_press($ev->line, $ev->col) if $ev->type eq 'press';
+	return $self->mouse_drag($ev->line, $ev->col) if $ev->type eq 'drag';
 }
 
 =head2 mouse_press
