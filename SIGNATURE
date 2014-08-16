@@ -1,0 +1,48 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 59c7c2bc3dae6266b5683e867e58d1e83914da5c Changes
+SHA1 307595b5f8680ddf21f487d3615ef613178c9179 INSTALL
+SHA1 509f655780fe2a934ad8515fa15921b96a6de84c LICENSE
+SHA1 1639d8d64670fcb5f20d3de252bca30a10a676b3 MANIFEST
+SHA1 acf2757a05fcec22643a38d6bd42b6a283519e9e META.json
+SHA1 45eaa823c9c4809bbe2d735e5c312eb56fab5c72 META.yml
+SHA1 794bde9b6e0f3579b176051f9c6d21827df718a8 Makefile.PL
+SHA1 c7e573a2cec598e278abf9c853d2622811a70c70 README
+SHA1 46da63ae3787788ff155a45bb6a855d0071a4ff3 cpanfile
+SHA1 4edb7c9d4ab9096f4755518440a4af9d9e4b079e dist.ini
+SHA1 a1c40c86bdcf8f977edc7a1ac7003830f446300b lib/Tickit/WidgetRole/Movable.pm
+SHA1 1a21eb1230d61f4fae1049b22c884a37e1dae559 lib/Tickit/WidgetRole/Movable.pod
+SHA1 985d9ded8d8ed7e344a09e52b1402e878e91da28 t/00-check-deps.t
+SHA1 c3b3e953ce3f6f6d950b4138f4c019642aab1243 t/00-compile.t
+SHA1 0cabf48f373b63a4cf29081bd13a47627fc2fbb8 t/000-report-versions-tiny.t
+SHA1 f242e380d897f0430a668ea3f2938df75c0bef55 xt/author/test-eol.t
+SHA1 198d1665317c3d91e3bb81f0a3b8dad8d4d66f20 xt/release/common_spelling.t
+SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
+SHA1 296928dbbcaffd1514ccc9b77a1e6e03cfe9b068 xt/release/pod-syntax.t
+SHA1 34513f89a70b96f6412fe2ef0ad4d475e8cac66c xt/release/synopsis.t
+SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJT7ut2AAoJEFKElMNpjtyDHswH/0DT9aDORqNc7X206GWQ0Vo9
+VDB82C6JsoKT/zTfLQ97Nljb7t6u/MJQExos4mmNxOn2zd5uvTADVv584UGlLLEl
+4mJ79tT4cJG0NbqFh0NsdGZ+6q23k08trt72sY1rP2ifzB3m+GRDSLA7K05S/Zc3
+Jz/26lH3U/2oXSLdHWCKUCHSZCNbnDqcYMECqKqYx2/lzpINRJs+rgZb52lHqT0B
+k+7kpycDf8PtNZDysixYyEhX0DgrIB9pWTOdBHnD8Hjy2j1PZpUg8YQIqHluYSN5
+KTAV1vTaOkjN9xBwuP0+GFdtpn1bkqYZe07VWUNjdC4zjyr8GDNyzfwstRsBE6g=
+=I+td
+-----END PGP SIGNATURE-----
